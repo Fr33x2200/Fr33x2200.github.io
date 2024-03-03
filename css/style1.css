@@ -1,0 +1,235 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 2;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style: none;
+}
+
+.menu .menu_item:not(:last-child) {
+  border-right: #000 dotted 2px;
+  padding-right: 50px;
+}
+
+.menu .menu_link {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.subheader {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  padding-top: 18px;
+  height: 84px;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+.subheader .subheader_logo {
+  max-width: 100%;
+  margin-bottom: 6px;
+}
+
+.subheader .subheader_official {
+  color: #FFF;
+  opacity: 0.5;
+  font-size: 13px;
+  font-weight: 200;
+}
+
+.subheader .subheader_call {
+  color: #FFF;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.subheader .subheader_phone {
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+  text-align: right;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+
+.subheader .subheader_btn {
+  width: 172px;
+  height: 46px;
+  border-radius: 4px;
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.promo {
+  padding: 200px 0 135px 0;
+  min-height: 800px;
+  background: url(../img/header/uber_bg.png) center center/cover no-repeat;
+}
+
+.promo .promo_header {
+  margin: 0;
+  margin-bottom: 22px;
+  color: #FFF;
+  text-align: center;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.promo .promo_subheader {
+  margin: 0;
+  margin-bottom: 25px;
+  color: #FFF;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.promo .promo_descr {
+  margin-bottom: 120px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.promo .promo_descr p:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.promo .promo_btn {
+  display: block;
+  margin: 0 auto;
+  width: 259px;
+  height: 63px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+  box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.advantages {
+  padding: 20px 0 135px 0;
+  min-height: 850px;
+}
+
+.advantages .advantages_title {
+  max-width: 115px;
+  max-height: 25px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding: 6px 0px;
+  text-align: center;
+  background-color: #000;
+  color: #FFF;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.advantages .advantages_subtitle {
+  color: #222;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages .advantages_list {
+  list-style-type: none;
+}
+
+.advantages .advantages_list .advantages_item {
+  display: flex;
+  align-items: center;
+}
+
+.advantages .advantages_list .advantages_item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.advantages .advantages_list .advantages_item .advantages_img-wrapper {
+  margin-right: 25px;
+  flex-shrink: 0;
+  display: flex;
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  background: #1EACC7;;
+}
+
+.advantages .advantages_list .advantages_item img {
+  display: block;
+  margin: auto;
+}
+
+.advantages .advantages_list .advantages_item .item_wrapper {
+  max-width: 370px;
+}
+
+.advantages .advantages_list .advantages_item .item_wrapper .item_title {
+  margin-bottom: 7px;
+  color: #1EACC7;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.advantages .advantages_list .advantages_item .item_wrapper .item_descr {
+  margin: 0;
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.advantages .advantages_list-second .advantages_item .item_wrapper {
+  max-width: 340px;
+  min-height: 150px;
+}
+
+.advantages .advantages_list-second .advantages_item .item_wrapper:not(:last-child){
+  
+}

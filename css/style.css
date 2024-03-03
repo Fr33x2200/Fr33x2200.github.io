@@ -1,0 +1,1394 @@
+/* line 1, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/style.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 1, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+header {
+  position: relative;
+}
+
+/* line 4, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 2;
+}
+
+/* line 11, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.hamburger {
+  display: none;
+}
+
+/* line 14, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 20, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.menu_item:not(:last-child) {
+  border-right: #000 dotted 2px;
+  padding-right: 50px;
+}
+
+/* line 24, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.menu_link {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+/* line 30, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.subheader {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  padding-top: 18px;
+  height: 84px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* line 38, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.subheader_logo {
+  max-width: 100%;
+  margin-bottom: 6px;
+}
+
+/* line 41, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.subheader_official {
+  color: #FFF;
+  opacity: 0.5;
+  font-size: 13px;
+  font-weight: 200;
+}
+
+/* line 46, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.subheader_call {
+  color: #FFF;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/* line 51, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.subheader_phone {
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+  text-align: right;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 59, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.subheader_btn {
+  width: 172px;
+  height: 46px;
+  border-radius: 4px;
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+  box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 2, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_mixins.sass */
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1EACC7;
+}
+
+/* line 75, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.promo {
+  padding: 200px 0 135px 0;
+  min-height: 800px;
+  background: url(../img/header/uber_bg.png) center center/cover no-repeat;
+}
+
+/* line 79, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.promo_header {
+  margin: 0;
+  margin-bottom: 22px;
+  color: #FFF;
+  text-align: center;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* line 88, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.promo_subheader {
+  margin: 0;
+  margin-bottom: 25px;
+  color: #FFF;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 97, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.promo_descr {
+  margin-bottom: 120px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* line 106, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.promo_descr p:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+/* line 108, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.promo_btn {
+  display: block;
+  margin: 0 auto;
+  width: 259px;
+  height: 63px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+  box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 2, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_mixins.sass */
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1EACC7;
+}
+
+/* line 126, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.label {
+  max-width: 115px;
+  max-height: 25px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding: 6px 0px;
+  text-align: center;
+  background-color: #000;
+  color: #FFF;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 140, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.title {
+  color: #222;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 147, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.advantages {
+  padding: 20px 0 25px 0;
+  min-height: 850px;
+}
+
+/* line 150, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.advantages_header {
+  margin-bottom: 30px;
+}
+
+/* line 152, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.advantages_list {
+  list-style-type: none;
+}
+
+/* line 154, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.advantages_item {
+  display: flex;
+  align-items: center;
+}
+
+/* line 157, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.advantages_item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+/* line 159, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.advantages_img-wrapper {
+  margin-right: 25px;
+  flex-shrink: 0;
+  display: flex;
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  background: #1EACC7;
+}
+
+/* line 167, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.advantages_img-wrapper img {
+  display: block;
+  margin: auto;
+}
+
+/* line 171, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.advantages .item_wrapper {
+  max-width: 370px;
+  height: 175px;
+}
+
+/* line 174, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.advantages .item_title {
+  margin-bottom: 7px;
+  color: #1EACC7;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* line 180, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.advantages .item_descr {
+  margin: 0;
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+/* line 186, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.advantages .item_wrapper {
+  max-width: 340px;
+  min-height: 150px;
+}
+
+/* line 190, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.subtitle {
+  color: #222222;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* line 199, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.mobile {
+  min-height: 864px;
+  padding: 45px 0 80px 0;
+  background: url("../img/mobile/mobile_bg.png") center center/cover no-repeat;
+}
+
+/* line 203, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.mobile_item {
+  width: 320px;
+  height: 280px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-top: 90px;
+}
+
+/* line 210, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.mobile_item_1 {
+  background: url("../img/mobile/card_1.png") center center/cover no-repeat;
+}
+
+/* line 212, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.mobile_item_2 {
+  background: url("../img/mobile/card_2.png") center center/cover no-repeat;
+}
+
+/* line 214, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.mobile_item_3 {
+  background: url("../img/mobile/card_3.png") center center/cover no-repeat;
+}
+
+/* line 216, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.mobile_item_4 {
+  background: url("../img/mobile/card_4.png") center center/cover no-repeat;
+}
+
+/* line 218, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.mobile_item_5 {
+  background: url("../img/mobile/card_5.png") center center/cover no-repeat;
+}
+
+/* line 220, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.mobile_item_6 {
+  background: url("../img/mobile/card_6.png") center center/cover no-repeat;
+}
+
+/* line 222, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.mobile_item_subtitle {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 229, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.mobile_item_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* line 243, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.mobile_item_plus:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1EACC7;
+  transition: 0.3s all;
+}
+
+/* line 250, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.mobile_item_plus:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 2px;
+  height: 14px;
+  background-color: #1EACC7;
+  transition: 0.3s all;
+}
+
+/* line 261, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.mobile_item_plus:hover:after, .mobile_item_plus:hover:before {
+  background-color: #ff5656;
+}
+
+/* line 264, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.choice {
+  min-height: 900px;
+}
+
+/* line 266, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.choice_top {
+  position: relative;
+  min-height: 500px;
+  padding: 59px 0 0 0;
+  background-color: #070716;
+}
+
+/* line 271, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.choice_top .label {
+  background-color: #fff;
+  color: #000;
+}
+
+/* line 274, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.choice_top .title {
+  color: #fff;
+}
+
+/* line 276, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.choice_top .subtitle {
+  color: #fff;
+}
+
+/* line 278, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.choice_logo {
+  position: absolute;
+  left: 50%;
+  bottom: -210px;
+  transform: translateX(-50%);
+}
+
+/* line 283, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.choice_bottom {
+  min-height: 400px;
+  padding: 0 0 138px 0;
+  background: url("../img/choice/choice_bg.png") center center/cover no-repeat;
+}
+
+/* line 287, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.choice_descr {
+  margin: 0 auto;
+  padding-top: 210px;
+  max-width: 327px;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* line 297, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.require {
+  padding: 68px 0 50px 0;
+}
+
+/* line 299, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.require h4 {
+  margin-bottom: 0;
+  line-height: 38px;
+}
+
+/* line 302, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.require_block {
+  margin: 33px 0;
+}
+
+/* line 304, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.require_title {
+  margin-bottom: 20px;
+  color: #1ca8c3;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: left;
+}
+
+/* line 311, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.require_list {
+  list-style: none;
+  padding-left: 50px;
+}
+
+/* line 314, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.require_list li {
+  position: relative;
+  margin-bottom: 10px;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* line 321, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.require_list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  vertical-align: middle;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/require/check_blue.png") center center/cover no-repeat;
+}
+
+/* line 331, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.require_descr {
+  max-width: 480px;
+  color: #1ca8c3;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+}
+
+/* line 339, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.require .warning .require_title {
+  color: #ff5656;
+}
+
+/* line 343, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.require .warning .require_list li:before {
+  background: url("../icons/require/check_red.png") center center/cover no-repeat;
+}
+
+/* line 349, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.world {
+  background-color: #080816;
+  min-height: 720px;
+}
+
+/* line 352, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.world_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 50px 0 50px 0;
+  min-height: 720px;
+  height: 100%;
+  background: url("../img/world/world_bg.png") center center/cover no-repeat;
+}
+
+/* line 360, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.world_wrapper .label {
+  width: 75px;
+  color: #070716;
+  background: #fff;
+}
+
+/* line 364, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.world_wrapper .title, .world_wrapper .subtitle {
+  color: #fff;
+}
+
+/* line 366, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.world_wrapper a {
+  display: block;
+  margin-top: auto;
+  color: #1fbad6;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 377, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: space-between;
+  height: 170px;
+  padding: 10px 25px 55px 25px;
+}
+
+/* line 383, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer .footer_icons {
+  position: absolute;
+  z-index: 1;
+  padding-top: 30px;
+}
+
+/* line 387, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer .footer_icons a {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #070716;
+}
+
+/* line 394, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer .footer_icons a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* line 399, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer .footer_icons a:not(:last-child) {
+  margin-right: 6px;
+}
+
+/* line 401, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer .container {
+  position: relative;
+}
+
+/* line 403, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer .container:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 7px;
+  background-color: #1EACC7;
+  transition: 0.3s all;
+}
+
+/* line 413, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer .nav_top_list {
+  padding: 0;
+  padding-top: 40px;
+  margin: 0;
+  margin-bottom: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 421, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer .nav_top_list li {
+  padding: 0;
+  line-height: 15px;
+}
+
+/* line 424, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer .nav_top_list a {
+  text-decoration: none;
+  color: #070716;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 431, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer .nav_bottom_list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 438, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer .nav_bottom_list li {
+  padding: 0;
+  line-height: 11px;
+}
+
+/* line 441, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer .nav_bottom_list a {
+  text-decoration: none;
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 447, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer .lng_link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 451, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer .footer_links {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  padding-top: 30px;
+}
+
+/* line 456, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer .footer_links a {
+  display: inline-block;
+}
+
+/* line 458, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer .footer_links a:not(:last-child) {
+  margin-right: 7px;
+}
+
+/* line 460, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+footer .footer_links a img {
+  max-height: 27px;
+}
+
+/* line 465, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_general.sass */
+.xs-visible {
+  display: none;
+}
+
+@media (max-width: 1399px) {
+  /* line 3, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .menu_item:not(:last-child) {
+    padding-right: 33px;
+  }
+}
+
+@media (max-width: 1199px) {
+  /* line 8, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .menu_item:not(:last-child) {
+    padding-right: 20px;
+  }
+  /* line 10, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .menu_link {
+    font-size: 13px;
+  }
+  /* line 13, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .promo_header {
+    font-size: 50px;
+  }
+  /* line 15, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 35px;
+  }
+  /* line 18, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .advantages_item {
+    align-items: flex-start;
+  }
+  /* line 20, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .advantages_item .item_descr {
+    width: 300px;
+  }
+  /* line 23, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .mobile_item {
+    width: 100%;
+  }
+  /* line 27, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .nav_top_list a {
+    font-size: 14px;
+  }
+  /* line 30, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .nav_bottom_list a {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 35, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .menu_item:not(:last-child) {
+    padding-right: 10px;
+  }
+  /* line 37, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .menu_link {
+    font-size: 10px;
+  }
+  /* line 41, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .subheader_logo img {
+    width: 100%;
+  }
+  /* line 43, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .subheader_official {
+    font-size: 11px;
+  }
+  /* line 45, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .subheader_phone {
+    font-size: 17px;
+  }
+  /* line 47, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .subheader_btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 2px;
+  }
+  /* line 52, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .promo_header {
+    font-size: 40px;
+  }
+  /* line 54, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 26px;
+  }
+  /* line 57, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .advantages_item {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 60, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .advantages_img-wrapper {
+    margin-bottom: 20px;
+  }
+  /* line 62, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .choice {
+    min-height: 758px;
+  }
+  /* line 64, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .choice_bottom {
+    min-height: 250px;
+    padding-bottom: 0;
+  }
+  /* line 67, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .choice_descr {
+    padding-bottom: 30px;
+  }
+  /* line 69, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .mobile {
+    min-height: 750px;
+    padding-bottom: 40px;
+  }
+  /* line 72, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .mobile_item {
+    padding-top: 40px;
+    height: 230px;
+  }
+  /* line 76, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .world {
+    min-height: 500px;
+  }
+  /* line 78, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .world_wrapper {
+    min-height: 500px;
+  }
+  /* line 81, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .nav_top_list {
+    justify-content: space-around;
+  }
+  /* line 83, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .nav_top_list a {
+    font-size: 12px;
+  }
+  /* line 86, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .nav_bottom_list a {
+    font-size: 11px;
+  }
+  /* line 88, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .footer_links {
+    right: 25px;
+    width: 120px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+  }
+  /* line 95, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .footer_links a {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 98, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .footer_links a img {
+    width: 100%;
+    max-height: 35px;
+  }
+  /* line 101, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .footer_links a:not(:last-child) {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 106, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+  }
+  /* line 118, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .menu_active {
+    left: 0;
+  }
+  /* line 120, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 0;
+    border: none;
+  }
+  /* line 123, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .menu_link {
+    font-size: 20px;
+  }
+  /* line 125, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  /* line 133, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.5s all;
+    margin-bottom: 2px;
+  }
+  /* line 141, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 143, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 145, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 147, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 149, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .xs-hidden {
+    display: none;
+  }
+  /* line 151, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .xs-visible {
+    display: block;
+  }
+  /* line 153, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .subheader {
+    padding-top: 12px;
+  }
+  /* line 155, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .subheader_logo {
+    display: block;
+    margin-top: 15px;
+  }
+  /* line 158, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .subheader_phone {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  /* line 167, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .subheader_btn {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 35px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  /* line 178, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .promo_header {
+    line-height: 45px;
+  }
+  /* line 181, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .advantages .title {
+    margin: 0 auto;
+    margin-bottom: 8px;
+    max-width: 350px;
+  }
+  /* line 185, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .advantages_list {
+    padding-left: 0;
+  }
+  /* line 187, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .advantages_img-wrapper {
+    margin-right: 0;
+  }
+  /* line 189, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .mobile {
+    min-height: 750px;
+    padding-bottom: 40px;
+  }
+  /* line 192, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .mobile_item {
+    width: 320px;
+    height: 280px;
+    padding-top: 90px;
+  }
+  /* line 197, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .choice {
+    min-height: 500px;
+  }
+  /* line 199, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .choice_descr {
+    padding-top: 150px;
+  }
+  /* line 201, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .choice_logo {
+    width: 500px;
+    bottom: -100px;
+  }
+  /* line 204, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .choice_logo img {
+    width: 100%;
+  }
+  /* line 206, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .choice_bottom {
+    min-height: 200px;
+    padding: 0;
+  }
+  /* line 209, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .world {
+    min-height: 360px;
+  }
+  /* line 211, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .world_wrapper {
+    min-height: 360px;
+  }
+  /* line 213, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .world_wrapper a {
+    font-size: 13px;
+  }
+  /* line 215, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer {
+    height: 200px;
+  }
+  /* line 217, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .nav_top_list {
+    justify-content: space-around;
+  }
+  /* line 219, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .nav_top_list a {
+    font-size: 12px;
+  }
+  /* line 221, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .nav_bottom_list {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 224, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .nav_bottom_list a {
+    font-size: 11px;
+  }
+  /* line 226, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .nav_bottom_list a {
+    margin-bottom: 5px;
+  }
+  /* line 228, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .footer_links {
+    top: 30px;
+    right: 50px;
+    width: 80px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+  }
+  /* line 236, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .footer_links a {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 239, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .footer_links a img {
+    width: 100%;
+    max-height: 35px;
+  }
+  /* line 242, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .footer_links a:not(:last-child) {
+    margin-bottom: 7px;
+  }
+  /* line 244, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .footer_icons {
+    top: 62px;
+  }
+  /* line 246, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .footer_icons a {
+    width: 30px;
+    height: 30px;
+  }
+  /* line 250, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .lng_link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 254, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  nav {
+    height: 30px;
+  }
+  /* line 256, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .subheader {
+    top: 30px;
+    height: 60px;
+  }
+  /* line 259, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .subheader_logo {
+    margin-top: 5px;
+  }
+  /* line 261, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .subheader_phone {
+    margin: 0;
+    margin-bottom: 6px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+  /* line 266, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .subheader_btn {
+    width: 110px;
+    height: 20px;
+    font-size: 10px;
+  }
+  /* line 270, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .promo {
+    min-height: 400px;
+    padding-top: 130px;
+    padding-bottom: 35px;
+  }
+  /* line 274, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .promo_descr {
+    display: none;
+  }
+  /* line 276, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .promo_header {
+    padding: 0 24px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  /* line 280, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .promo_subheader {
+    margin-bottom: 72px;
+    padding: 0 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  /* line 285, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    font-size: 16px;
+  }
+  /* line 289, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .menu {
+    width: 85%;
+  }
+  /* line 291, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .menu_item {
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+  }
+  /* line 295, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .menu_item:not(:last-child) {
+    padding-right: 0;
+    border: none;
+  }
+  /* line 298, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .menu_link {
+    display: block;
+    font-size: 15px;
+  }
+  /* line 302, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .advantages_header {
+    margin-bottom: 25px;
+  }
+  /* line 304, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .advantages_header .title {
+    margin-bottom: 0;
+  }
+  /* line 306, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .advantages_img-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+  /* line 311, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .advantages_item .item_title {
+    font-size: 16px;
+  }
+  /* line 313, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .advantages_item .item_descr {
+    width: 100%;
+  }
+  /* line 315, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .label {
+    margin-bottom: 15px;
+  }
+  /* line 317, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  /* line 320, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .mobile {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  /* line 323, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .mobile_item {
+    width: 290px;
+    height: 254px;
+    padding-top: 80px;
+    margin-bottom: 30px;
+  }
+  /* line 328, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .mobile_item_subtitle {
+    padding: 0 30px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  /* line 332, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .mobile_item_plus {
+    bottom: 20px;
+  }
+  /* line 334, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .mobile_subtitle {
+    margin-bottom: 25px;
+  }
+  /* line 336, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .subtitle {
+    font-size: 14px;
+  }
+  /* line 338, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .choice {
+    min-height: 393px;
+  }
+  /* line 340, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .choice_top {
+    padding-top: 25px;
+    min-height: 393px;
+  }
+  /* line 343, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .choice_top .title {
+    display: none;
+  }
+  /* line 345, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .choice_top .subtitle {
+    display: none;
+  }
+  /* line 347, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .choice_logo {
+    top: 85px;
+    width: 300px;
+    height: 190px;
+  }
+  /* line 351, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .choice_descr {
+    padding-top: 235px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  /* line 357, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .require {
+    padding: 25px 0 15px 0;
+  }
+  /* line 359, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .require .title {
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+  /* line 362, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .require_title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  /* line 367, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .require_block {
+    margin: 15px 0;
+  }
+  /* line 369, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .require_list {
+    padding-left: 45px;
+  }
+  /* line 371, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .require_list li {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+  }
+  /* line 375, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .require_list li:before {
+    left: -30px;
+    top: -2px;
+  }
+  /* line 378, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .world {
+    min-height: none;
+    height: 305px;
+  }
+  /* line 381, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .world_wrapper {
+    height: 100%;
+    padding: 25px 0 30px 0;
+  }
+  /* line 384, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .world_wrapper .subtitle {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+  /* line 387, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  .world_wrapper a {
+    font-size: 13px;
+  }
+  /* line 389, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer {
+    height: 255px;
+    padding: 25px 8px 30px 8px;
+  }
+  /* line 392, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .container:before {
+    height: 4px;
+    width: 255px;
+  }
+  /* line 395, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .nav_top_list {
+    padding-top: 20px;
+    margin-bottom: 4px;
+    justify-content: space-between;
+  }
+  /* line 399, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .nav_top_list a {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+  }
+  /* line 404, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .nav_bottom_list {
+    padding: 0 20px;
+    margin-bottom: 4px;
+    height: 46px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  /* line 411, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .nav_bottom_list a {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 11px;
+  }
+  /* line 416, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .footer_links {
+    padding: 0;
+    width: 260px;
+    height: 24px;
+    flex-direction: row;
+    top: 200px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  /* line 428, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .footer_links a:not(:last-child) {
+    margin-right: 8px;
+  }
+  /* line 431, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .footer_icons {
+    padding: 0;
+    width: 170px;
+    top: 147px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* line 437, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .footer_icons a {
+    width: 35px;
+    height: 35px;
+  }
+  /* line 441, C:/Users/fr33x/Desktop/Study projects/UBER/src/sass/_media.sass */
+  footer .lng_link {
+    color: #1fbad6;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 11px;
+    text-transform: uppercase;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
